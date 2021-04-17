@@ -2,6 +2,11 @@ import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
 import App from "../App";
+import img9 from "../images/img-9.jpg";
+import img2 from "../images/img-2.jpg";
+import img3 from "../images/img-3.jpg";
+import img4 from "../images/img-4.jpg";
+import img8 from "../images/img-8.jpg";
 
 export default function Cards() {
   return (
@@ -11,13 +16,13 @@ export default function Cards() {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              imgSrc="./images/img-9.jpg"
+              imgSrc={img9}
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
               label="Adventure"
               path="/services"
             ></CardItem>
             <CardItem
-              imgSrc="./images/img-2.jpg"
+              imgSrc={img2}
               text="Travel through the Islands of Bali in a Private Cruise"
               label="Luxury"
               path="/services"
@@ -25,19 +30,19 @@ export default function Cards() {
           </ul>
           <ul className="cards__items">
             <CardItem
-              imgSrc="./images/img-3.jpg"
+              imgSrc={img3}
               text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
               label="Mystery"
               path="/services"
             ></CardItem>
             <CardItem
-              imgSrc="./images/img-4.jpg"
+              imgSrc={img4}
               text="Experience Football on Top of the Himilayan Mountain"
               label="Adventure"
               path="/products"
             ></CardItem>
             <CardItem
-              imgSrc="./images/img-8.jpg"
+              imgSrc={img8}
               text="Ride through the Sahara Desert on a guided camel tour"
               label="Adrenaline"
               path="/sign-up"
