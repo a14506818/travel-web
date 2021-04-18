@@ -1,6 +1,11 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import Home from "./components/pages/Home";
 import Products from "./components/pages/Products";
 import Services from "./components/pages/Services";
@@ -10,7 +15,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <Navbar></Navbar>
         <Switch>
           <Route path="/" exact component={Home}></Route>
@@ -19,7 +24,7 @@ function App() {
           <Route path="/sign-up" component={SignUp}></Route>
         </Switch>
         <Footer></Footer>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
